@@ -45,8 +45,3 @@ git status
 git log 
 
 ```
-## 11. Revert Commit 
-```
-git log --oneline
-git revert [COMMIT_ID]
-```
