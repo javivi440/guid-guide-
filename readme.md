@@ -44,6 +44,39 @@ git merge dir/branch-name
 git status 
 git log 
 
+
+
+```
+## 7. Create Stash 
+```
+
+git status
+git stash
+git status
+
+```
+## 8. Apply Stash
+```
+
+git stash list
+git stash apply 
+git status
+
+```
+## 9. Delete Stash
+```
+
+git stash list
+git stash drop 1
+git stash list
+
+```
+## 10. Pop Stash 
+```
+
+git stash list 
+git stash pop
+git stash list
 ```
 ## 11. Revert Commit 
 ```
@@ -76,3 +109,6 @@ git apply <files>
 git remote add origin [REMOTE-URL]
 git push -u origin master 
 git push origin --all
+
+```
+
