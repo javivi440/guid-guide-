@@ -69,3 +69,9 @@ git diff HEAD > <file>
 ## 15. Apply patch 
 ```
 git apply <files>
+
+## 16. Init GitHub
+```
+git remote add origin [REMOTE-URL]
+git push -u origin master 
+git push origin --all
