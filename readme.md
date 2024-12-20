@@ -76,16 +76,19 @@ git cherry-pick [COMMIT_ID]
 ```
 git log --oneline 
 git reset --soft HEAD~1
+tambien puedes usar los 3 resets que vienen por defecto en 
+el sublime merge que son:
+
+git reset --soft
+git reset <commit-hash>
+git reset --hard <commit-hash>
+otros resets son
+git reset "nombre del archivo" <commit-hash>
+git reset <commit-hash>
 ```
 ## 14. Create Patch 
 ```
 git diff HEAD > <file>
-git stash list
-git stash Popgit stash  list
-tambien puees usar:
-git diff > cambios.patch
-git diff --chached > cambios.patch
-git format-patch -1 <commit-hash>
 ```
 ## 15. Apply patch 
 ```
