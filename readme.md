@@ -1,18 +1,18 @@
 # Git Guide
-## 1.   Config user 
+### 1.   Config user 
 ```
 git config --global user.name "Your Full Name"
 git config --global user.email "your-email-address"
 git config --list
 ```
-## 2. Init git 
+### 2. Init git 
 ```
 mkdir "Repository Name"
 cd ".\Repository Name"
 git init 
 dir -hidden
 ```
-## 3. First git
+### 3. First git
 ```
 git status 
 git add .\file.ext 
@@ -20,17 +20,17 @@ git status
 git comit -m "Commit message: brief description"
 git status 
 ```
-# 4. Create branch
+### 4. Create branch
 ```
 git branch dir/branch-name 
 git branch
 ```
-## 5. Checkout branch
+### 5. Checkout branch
 ```
 git checkout dir/branch-name 
 git branch 
 ```
-## 6. Merge to Master 
+### 6. Merge to Master 
 ```
 git checkout master
 git status
@@ -38,63 +38,65 @@ git merge dir/branch-name
 git status 
 git log 
 ```
-## 7. Create Stash 
+### 7. Create Stash 
 ```
 git status
 git stash
 git status
 ```
-## 8. Apply Stash
+### 8. Apply Stash
 ```
 git stash list
 git stash apply 
 git status
 ```
-## 9. Delete Stash
+### 9. Delete Stash
 ```
 git stash list
 git stash drop 1
 git stash list
 ```
-## 10. Pop Stash 
+### 10. Pop Stash 
 ```
 git stash list 
 git stash pop
 git stash list
 ```
-## 11. Revert Commit 
+### 11. Revert Commit 
 ```
 git log --oneline
 git revert [COMMIT_ID]
 ```
-## 12. Cherry Pick 
+### 12. Cherry Pick 
 ```
 git log --oneline
 git cherry-pick [COMMIT_ID]
 ```
-## 13. Reset 
+### 13. Reset 
 ```
 git log --oneline 
 git reset --soft HEAD~1
-tambien puedes usar los 3 resets que vienen por defecto en 
-el sublime merge que son:
-
 git reset --soft
 git reset <commit-hash>
 git reset --hard <commit-hash>
-otros resets son
 git reset "nombre del archivo" <commit-hash>
 git reset <commit-hash>
 ```
-## 14. Create Patch 
+### 14. Create Patch 
 ```
 git diff HEAD > <file>
+git stash list
+git stash Popgit stash  list
+tambien puees usar:
+git diff > cambios.patch
+git diff --chached > cambios.patch
+git format-patch -1 <commit-hash>
 ```
-## 15. Apply patch 
+### 15. Apply patch 
 ```
 git apply <files>
 ```
-## 16. Init GitHub
+### 16. Init GitHub
 ```
 git remote add origin [REMOTE-URL]
 git push -u origin master 
