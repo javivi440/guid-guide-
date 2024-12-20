@@ -97,6 +97,12 @@ git reset --soft HEAD~1
 ## 14. Create Patch 
 ```
 git diff HEAD > <file>
+git stash list
+git stash Popgit stash  list
+tambien puees usar:
+git diff > cambios.patch
+git diff --chached > cambios.patch
+git format-patch -1 <commit-hash>
 ```
 
 ## 15. Apply patch 
